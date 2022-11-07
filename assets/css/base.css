@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --primary-color: #ee4d2d;
+    --background-color: #f5f5f5;
+    --border-color: #dbdbdb;
+    --header-height:120px;
+    --navbar-height: 34px;
+    --header-search-height: calc(var(--header-height) - var(--navbar-height));
+    --gold-color: #ffce3d;
+    --header-sort-bar-height: 46px;
+}
+
+html {
+    /* mặc định 100% bằng 16px. nên chia 62,5% thì tương ứng với 10px */
+    font-size: 62.5%;
+    list-style: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* -----------responsive web */
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2 {
+    padding-left: 5px ;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px ;
+    padding-right: 5px;
+    width: 20%; 
+}
+
+.grid__column-10 {
+    padding-left: 5px ;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+.btn {
+    min-width: 120px;
+    height: 32px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.btn.btn--nomal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn-disable {
+    cursor: default;
+    background-color: #bbb;
+    color: #666;
+}
+
+.btn--space-btw {
+    margin-right: 8px;
+}
+
+/* --------------PAGE SCROLL----------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-list {
+    line-height: 3rem;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.pagination-list--active {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.pagination-list--active .pagination-link {
+    color: var(--white-color);
+}
+
+.pagination-list--active:hover  {
+    opacity: 0.9;
+}
+
+.pagination-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #999999;
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    min-width: 30px;
+}
+
+.pagination-link__icon {
+   font-size: 1.4rem;
+}
+
